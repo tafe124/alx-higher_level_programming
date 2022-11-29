@@ -1,12 +1,6 @@
 #!/usr/bin/node
-const argv = process.argv;
-
-function factorial (num) {
-  if (!num || num <= 0) {
-    return (1);
-  }
-  return (num * factorial(num - 1));
+function factorial (n) {
+  return n === 0 || isNaN(n) ? 1 : n * factorial(n - 1);
 }
 
-const arg = Number(argv[2]);
-console.log(factorial(arg));
+console.log(factorial(Number(process.argv[2])));
