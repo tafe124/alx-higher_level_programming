@@ -1,4 +1,4 @@
 #!/bin/bash
-# POST request with parameters
-curl -s --data "email=hr@holbertonschool.com&subject=I%20will%20always%20be%20here%20for%20PLD" "$1"
+# sends a request to that URL, and displays the size of the body of the response
+curl -Lsd "email=hr@holbertonschool.com&subject=I will always be here for PLD" -H "X-HolbertonSchool-User-Id: 98" -X 'POST' "$1"
 
