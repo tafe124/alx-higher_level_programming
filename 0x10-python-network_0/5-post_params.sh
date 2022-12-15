@@ -1,4 +1,4 @@
 #!/bin/bash
-# This script takes in a URL, sends a POST request to the passed URL, and displays the body of the response. A variable 'email' must be sent with the value 'hr@holbertonschool.com'. A variable 'subject' must be sent with the value 'I will always be here for PLD'.
-curl -s "$1" -X POST -d "tafesegechera22@gmail.com&subject=I will always be here for PLD"
+# POST request with parameters
+curl -s --data "email=hr@holbertonschool.com&subject=I%20will%20always%20be%20here%20for%20PLD" "$1"
 
