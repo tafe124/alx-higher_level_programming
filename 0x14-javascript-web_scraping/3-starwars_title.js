@@ -12,4 +12,4 @@ request.get(url, (error, response, body) => {
   }
   const title = JSON.parse(body).title;
   console.log(title);
-})i;
+});
